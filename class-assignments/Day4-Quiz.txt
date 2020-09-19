@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 Day 4 Quiz
 
 1.c
 2.a
 3.a
 4.b
+=======
+Day 4 Quiz
+
+1.c
+2.a
+3.a
+4.b
+>>>>>>> da941ad4f1e06cd0b9caa762f12db23df9828679
 5.b
