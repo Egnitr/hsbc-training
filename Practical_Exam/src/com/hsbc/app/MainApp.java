@@ -14,7 +14,7 @@ public class MainApp {
 
 	public static void main(String[] args) {
 		int choice=1;
-		if (choice==2) {
+		if (choice==1) {
 			FoodDaoImpl dao=new FoodDb();
 			FoodService service = new FoodService(dao);
 			try {
