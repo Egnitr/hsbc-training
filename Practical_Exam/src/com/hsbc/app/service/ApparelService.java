@@ -16,16 +16,6 @@ public class ApparelService {
 		return dao.save(new Apparel(code, name, size,  material,quantity, price));
 	}
 
-	public String getApparelDetails(int id) {
-
-		try {
-			Apparel e = dao.findById(id);
-
-			return e.getCode() + " " + e.getName() + " " + e.getQuantity() + " " + e.getSize() + " " + e.getMaterial();
-		} catch (ItemNFException ex) {
-			throw new RuntimeException("Item Not found");
-		}
-	}
 
 	public void printApparelList() {
 

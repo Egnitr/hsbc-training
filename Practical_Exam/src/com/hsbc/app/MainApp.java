@@ -13,7 +13,7 @@ import com.hsbc.app.service.FoodService;
 public class MainApp {
 
 	public static void main(String[] args) {
-		int choice=1;
+		int choice=3;
 		if (choice==1) {
 			FoodDaoImpl dao=new FoodDb();
 			FoodService service = new FoodService(dao);

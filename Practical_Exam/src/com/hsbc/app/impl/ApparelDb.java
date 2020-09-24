@@ -13,31 +13,19 @@ public class ApparelDb implements com.hsbc.app.dao.ApparelDaoImpl {
 
 	public ApparelDb() {
 		apparelDB.put(100, new Apparel(100, "Shirt", "Medium", "Cotton",40,2000));
-		apparelDB.put(100, new Apparel(101, "Sweater", "Large", "Woolen",70,2000));
-		apparelDB.put(100, new Apparel(102, "Jacket", "Small", "Woolen",80,1000));
-		apparelDB.put(100, new Apparel(103, "T-Shirt", "Medium", "Cotton",20,600));
-		apparelDB.put(100, new Apparel(104, "Trouser", "Large", "Cotton",100,3000));
+		apparelDB.put(101, new Apparel(101, "Sweater", "Large", "Woolen",70,2000));
+		apparelDB.put(102, new Apparel(102, "Jacket", "Small", "Woolen",80,1000));
+		apparelDB.put(103, new Apparel(103, "T-Shirt", "Medium", "Cotton",20,600));
+		apparelDB.put(104, new Apparel(104, "Trouser", "Large", "Cotton",100,3000));
 
 	}
 
-	@Override
-	public Apparel findById(int id) throws ItemNFException {
-		try {
-			if (apparelDB.containsKey(id)) {
-				return apparelDB.get(id);
-			} else {
-				throw new ItemNFException();
-			}
-		} catch (ItemNFException ex) {
-			throw ex;
-		}
-	}
 
 	@Override
 	public List<Apparel> listAll() {
 
-		ArrayList<Apparel> foodList = new ArrayList(apparelDB.values());
-		return foodList;
+		ArrayList<Apparel> apparelList = new ArrayList(apparelDB.values());
+		return apparelList;
 	}
 
 	@Override

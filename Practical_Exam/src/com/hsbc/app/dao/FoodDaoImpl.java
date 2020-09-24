@@ -6,13 +6,6 @@ import com.hsbc.app.entity.FoodItems;
 
 public interface FoodDaoImpl {
 	/**
-	 * This method finds the customer based on its id
-	 * @param id - id of an customer
-	 * @return -  throws the customer object
-	 * @throws FoodNFException
-	 */
-	public FoodItems findById(int id) throws ItemNFException;
-	/**
 	 * Lists  all the customers of portal
 	 * @return
 	 */

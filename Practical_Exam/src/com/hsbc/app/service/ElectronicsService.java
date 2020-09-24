@@ -16,16 +16,6 @@ public class ElectronicsService {
 		return dao.save(new Electronics(code, name, warranty,  quantity, price));
 	}
 
-	public String getElectronicsDetails(int id) {
-
-		try {
-			Electronics e = dao.findById(id);
-
-			return e.getCode() + " " + e.getName() + " " + e.getQuantity() + " " + e.getWarranty();
-		} catch (ItemNFException ex) {
-			throw new RuntimeException("Item Not found");
-		}
-	}
 
 	public void printElectronicsList() {
 

@@ -16,17 +16,6 @@ public class FoodService {
 		return dao.save(new FoodItems(code,name,manufactureDate,expiryDate, veg,quantity,price));
 	}
 
-	public String getFoodDetails(int id) {
-
-		try {
-			FoodItems e = dao.findById(id);
-
-			return e.getCode() + " " + e.getName() + " " + e.getQuantity() + " " + e.getVeg();
-		} catch (ItemNFException ex) {
-			throw new RuntimeException("Item Not found");
-		}
-	}
-
 	public void printFoodList() {
 
 		for (FoodItems e1 : dao.listAll()) {
