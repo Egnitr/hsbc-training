@@ -39,5 +39,17 @@ public class Emp {
     public String toString() {
         return id+" "+name+" "+city+" "+sal;
     }
+	@Override
+	public boolean equals(Object obj) {
+		Emp e=(Emp)obj;
+		if (this.getId()==e.getId()) {
+			return true;
+		}
+		return super.equals(obj);
+	}
+	@Override
+	public int hashCode() {
+		return this.getId();
+	}
 	
 }

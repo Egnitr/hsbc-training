@@ -15,7 +15,7 @@ public class EmpSet {
         e.add(e3);
   
         System.out.println(e); 
-        System.out.println("List contains Pune or not:" + e.contains("Pune")); 
+        System.out.println("List contains Pune or not:" + e.contains(101)); 
 
         e.remove(e1); 
         System.out.println("List after removing Employee1:"+ e); 
@@ -24,6 +24,10 @@ public class EmpSet {
         Iterator<Emp> i = e.iterator(); 
         while (i.hasNext()) 
             System.out.println(i.next()); 
+        
+        for(Emp ep: e) {
+        	System.out.println(ep);
+        }
     } 
 
 }
